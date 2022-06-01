@@ -10,7 +10,7 @@
                             "code": 1,
                             "title": "Introdução",
                             "content": "A camada de controle é responsável por intermediar as requisições enviadas pelo View com as respostas fornecidas pelo Model, processando os dados que o usuário informou e repassando para outras camadas. Numa analogia bem simplista, o controller operaria como o ‘’maestro de uma orquestra’’ que permite a comunicação entre o detentor dos dados e o cliente.",
-                            "codelink": "document-ui/data/code-txt/arquivo.txt"
+                            "codelink": "data/code-txt/arquivo.txt"
                         },
                         {
                             "code": 2,
