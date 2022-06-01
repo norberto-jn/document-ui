@@ -1,0 +1,60 @@
+body {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  grid-template-areas: "nav content content content content";
+  grid-template-columns: 20% 80%;
+  overflow-x: hidden;
+
+  .l-nav {
+    grid-area: nav;
+    background-color: #f8f6fb;
+  }
+
+  .l-content {
+    h1 {
+      font-size: 2.5rem;
+      color: #232323;
+    }
+
+    grid-area: content;
+
+    .l-document {
+      width: 50%;
+      margin-left: 5%;
+
+      section {
+        p {
+          font-size: 1.125rem;
+          color: #565454;
+        }
+        div {
+          overflow: auto;
+        }
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        color: salmon;
+      }
+
+      .l-ide {
+        padding-top: 2%;
+        padding-left: 1%;
+        .c-circle-ide {
+          width: 15px;
+          height: 15px;
+          margin-left: 0.5rem;
+          border-radius: 10px;
+          background-color: blue;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .l-document {
+    width: 70% !important;
+  }
+}
