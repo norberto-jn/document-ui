@@ -1,0 +1,5 @@
+@Post()
+async save (@Schema() schema: SchemaTP, @User() user: PersonModel, @Body() dto: SaleSaveRequestDTO): Promise<number> {
+    const sale = await this._saleManager.save(schema, user, dto)
+    return sale.code
+}
